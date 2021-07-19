@@ -1,0 +1,85 @@
+1) demo
+	project
+		allows users to register themselves (signup)
+		after signup they are able to login
+		welcome Rajesh!			Logout
+		
+2) splunk
+
+login validation done by us is simple
+	if condition			username and password		
+		success
+	else
+		failure
+
+	select * from user where username=? and password=?
+
+	if this query returns 0 records
+		login is failure
+	else
+		you got 1 object of user then it is success
+
+	keep this user object in localStorage (angular)
+	
+every page you visit, first we check if localStorage has an item "user" 
+	if it is null
+		you have not logged in
+	else
+		you have logged in
+
+	while logging out,	destroy the localStorage
+
+Spring boot security
+	for server to ascertain that the client has logged in
+
+
+
+
+i have removed spring security portion
+	configuration		deleted	
+	MyUser			not implementing userdetails
+
+
+
+
+1) create  login component
+2) create signup component
+
+test each component by plugging it in app component
+test it 
+
+menu
+
+units to be developed
+
+Basic functionality should be completed 
+
+Splunk
+-------
+	need?
+		Every day, lot of log entries are created.
+		who is giving the information?	machine
+		machine data				(big data)
+			because, every transaction or error or any activity , causes lot of log messages
+		this over a period of time becomes huge information that can be used to diagnose or analyze
+
+	the log information is not very useful because of its nature or format
+	if such log information is available as pie chart or Bar chart or graph, trend, then how userful it will be?
+
+	Splunk was introduced
+
+can we create alerts?	like some log entries generated in aws is unnoticed. Can we configure aws clusters containers to integrate it with splunk so that it can forward the critical log entries 
+
+collect
+forward
+notifications
+alert
+analyze
+report
+search
+
+
+
+Project
+-------
+x
